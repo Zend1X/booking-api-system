@@ -1,0 +1,28 @@
+# Laravel
+/src/vendor/
+/src/node_modules/
+/src/.env
+/src/storage/*.key
+/src/storage/framework/cache/*
+/src/storage/framework/sessions/*
+/src/storage/framework/views/*
+/src/storage/logs/*
+/src/bootstrap/cache/*
+.phpunit.result.cache
+
+# IDE
+.vscode/
+.idea/
+*.sublime-*
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Docker
+*.log
+mysql_data/
+
+# Composer
+composer.lock
