@@ -21,7 +21,7 @@ class Room extends Model
         'equipment' => 'array'
     ];
 
-    //protected $appends = ['average_rating'];
+    protected $appends = ['average_rating'];
 
     public function bookings()
     {
@@ -33,7 +33,7 @@ class Room extends Model
         return $this->belongsTo(User::class, 'created_by');
     }
 
-  /*  public function getAverageRatingAttribute()
+    public function getAverageRatingAttribute()
     {
         return $this->bookings()
             ->whereHas('review')
@@ -42,4 +42,3 @@ class Room extends Model
             ->avg('review.rating') ?? 0;
     }
 } 
-*/
